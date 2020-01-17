@@ -1,0 +1,475 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-image: url(imges/bg.png); 
+	background-size: cover;
+	height: 100%;
+}
+/*=========================== 
+ Шапка сайта
+ ==============================*/
+#shapka {
+	width: 100%;
+    height: 40px;
+    background: #18d0b0;
+}
+
+#logo {
+    width: 40px;
+    height: 100%;
+    position: relative;
+    float: left;
+
+}
+#logo button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+#logo img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+#logo span{
+	font-size: 26px;
+    position: absolute;
+    top: 5px;
+    left: 49px;
+    color: white;
+}
+
+#menu {
+    float: right;
+    height: 100%;
+}
+
+#menu a{
+	color: white;
+    text-decoration: none;
+    font-size: 20px;
+    height: calc(100% - 9px);
+    display: block;
+    float: left;
+    padding: 9px 10px 0;
+}
+
+#menu a:hover {
+	background: #11b9b1;
+}
+/*=====================================
+Основной блок с контактами и сообщенями
+=======================================*/
+#contect {
+	width: 800px;
+	height: calc(100% - 100px);
+	margin: 0 auto;
+	background: white;
+}
+
+/* ==========================
+Левый блок с поискам и контактами
+============================== */
+#users {
+	width: 260px;
+	height: 100%;
+	float: left;
+}
+/* =======================
+Поиск
+========================== */
+#poisk {
+    height: 31px;
+    padding: 10px;
+    width: 100%;
+}
+#poisk input {
+    background: #d6d6d6;
+    border: none;
+    height: 100%;
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+    width: calc(74% - 20px);
+    outline: none;
+    padding: 0 10px;
+}
+#poisk button{
+	width: 31px;
+    height: 31px;
+    border: none;
+    background: #d6d6d6;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#poisk button:active {
+	background:  #b1e4c3;
+}
+
+#poisk button img{
+	width: 100%;
+	height: 100%;
+}
+
+/* ======================
+Контакты
+========================== */
+#spisok {
+	height: calc(100% - 77px);
+    overflow-y: auto;
+}
+#spisok ul{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+#spisok ul li {
+	padding: 10px;
+	position: relative;
+	width: calc(100% - 20px);
+}
+
+#spisok ul a {
+	text-decoration: none;
+	color: #505050;
+}
+#spisok ul .avatar{
+	width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+#spisok ul .avatar img{
+	width: 100%;
+	height: 100%;
+}
+#spisok ul li .time {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#spisok p,
+#spisok  h2 {
+	margin: 0;
+}
+#spisok  h2 {
+	margin-bottom:5px;
+}
+/* =================
+Делаем красивый скрол
+================== */
+#spisok::-webkit-scrollbar-track,
+#spisok-soobsheniya::-webkit-scrollbar-track,
+.modal .content::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar,
+#spisok-soobsheniya::-webkit-scrollbar,
+.modal .content::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar-thumb,
+#spisok-soobsheniya::-webkit-scrollbar-thumb,
+.modal .content::-webkit-scrollbar-thumb{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+/* =============================
+Стили для переписки з пользователем
+================================ */
+
+
+#soobsheniya{
+	width: 540px;
+    float: right;
+    height: 100%;
+
+}
+#spisok-soobsheniya{
+	height: 80%;
+   overflow-y: auto;
+}
+#soobsheniya ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#soobsheniya ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#soobsheniya ul .avatar img {
+	width: 100%;
+	height: 100%
+}
+
+#soobsheniya ul li {
+	position: relative;
+	padding: 10px;
+}
+
+#soobsheniya ul a {
+	text-decoration: none;
+    color: black;
+}
+#soobsheniya ul h2,
+#soobsheniya ul p {
+	margin: 0;
+}
+
+#soobsheniya ul .time {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/* ===============
+Стили для формочки отправки сообщения
+======================================= */
+
+#form {
+	padding: 10px;
+    height: calc(20% - 20px);
+}
+
+#form div{
+	width: 70px;
+    height: 70px;
+    float: left;
+}
+
+#send {
+	width: 15%;
+    height: 66%;
+    border: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+}
+
+
+#form .dop {
+	width: 10%;
+    height: 44%;
+    border: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    float: left;	
+}
+
+#send img,
+#form .dop img,
+#form div img {
+	height: 100%;
+	width: 100%;
+}
+
+#form textarea {
+	height: 54%;
+    width: 67%;
+}
+
+/* ================
+Стили для модальных окон
+============================ */
+
+.modal {
+	display: none;
+	width: 360px;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid #18d0b0;
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 200px);
+	padding: 20px;
+	max-height: 300px;
+	z-index: 99999;
+	
+}
+
+.modal .close,
+.modal .close a {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	color: black;
+    text-decoration: none;
+}
+
+.modal .content {
+	height: 280px;
+	margin-top: 20px;
+	overflow-y: auto;
+}
+/* ===================
+Модальне окно з контактами
+========================== */
+
+#contacts-modal ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#contacts-modal ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#contacts-modal ul .avatar img {
+	width: 100%;
+	height: 100%
+}
+
+#contacts-modal ul li {
+	position: relative;
+	padding: 10px;
+}
+#contacts-modal ul a {
+	text-decoration: none;
+	color: #505050;
+}
+#contacts-modal ul h2 {
+	margin: 10px;
+}
+
+/*================================
+Модальне окно з входом
+===================================*/
+#log-out-modal {
+	height: 187px;
+}
+
+#log-out-modal input {
+	background: #d6d6d6;
+    border: none;
+    height: 25px;
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+    outline: none;
+    padding: 0 10px;
+}
+
+#log-out-modal h2 {
+	margin: 0;
+}
+
+#log-out-modal h1 {
+	margin: 0;
+	text-align: center;
+}
+#log-out-modal .password {
+	margin: 0;
+    margin-top: 27px;
+}
+
+#log-out-modal button {
+	width: 76px;
+    height: 31px;
+    border: none;
+    background: #28d8b9;
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 33px;
+    right: 40%;
+}
+
+#log-out-modal button:active {
+	background:  #b1e4c3;
+}
+
+#log-out-modal a {
+	color: black;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    float: right;
+    padding: 0px 10px 0;
+    margin-top: -27px;
+}
+
+/*================================
+Модальне окно з регестрацией
+===================================*/
+#registration-modal {
+	height: 219px;
+}
+
+#registration-modal h1 {
+	margin: 0;
+	text-align: center;
+}
+#registration-modal h2 {
+	margin: 0;
+	float: right;
+	padding: 0px 10px 0;
+}
+#registration-modal .password {
+	margin: 0;
+	margin-top: 25px;
+}
+
+#registration-modal input {
+	background: #d6d6d6;
+    border: none;
+    height: 25px;
+    margin: 0;
+    float: left;
+    margin-right: 10px;
+    width: calc(99% - 20px);
+    outline: none;
+    padding: 0 10px;
+}
+#registration-modal a {
+	color: black;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    float: left;    
+}
+#registration-modal button {
+	width: 136px;
+    height: 31px;
+    border: none;
+    background: #28d8b9;
+    outline: none;
+    cursor: pointer;
+    margin-top: 33px;
+    position: absolute;
+    left: 34%;
+}
+
+#registration-modal button:active {
+	background:  #b1e4c3;
+}
